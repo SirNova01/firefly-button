@@ -1,0 +1,33 @@
+{
+  "name": "firefly-button",
+  "version": "1.0.0",
+  "description": "A Firefly Button Component (using Kinet) to show congrats buttons for example :)",
+  "main": "src/index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss build src/tailwind.css -o src/tailwind.output.css",
+    "build": "npm run build:css && babel src --out-dir lib",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "kinet",
+    "animation",
+    "component"
+  ],
+  "author": "Taye Aduewa Micheal",
+  "license": "MIT",
+  "dependencies": {
+    "kinet": "^2.2.1",
+    "postcss-cli": "^11.0.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-react": "^7.24.6",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}
